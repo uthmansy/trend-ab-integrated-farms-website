@@ -4,7 +4,7 @@ export const aboutTimelines = (scrollRef: React.MutableRefObject<null>) => {
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: "#about-us-section",
-      scroller: scrollRef.current,
+      // scroller: scrollRef.current,
       start: "top 80%",
       end: "bottom 100%",
       scrub: true,
@@ -25,7 +25,7 @@ export const heroTimeline = (scrollRef: React.MutableRefObject<null>) => {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".animate", // Start the timeline when .animate is triggered
-      scroller: scrollRef.current, // Use the Locomotive Scroll container
+      // scroller: scrollRef.current, // Use the Locomotive Scroll container
       start: "top 80%", // Start when the top of .animate reaches 80% of the viewport height
       end: "top 30%", // End when the top of .animate reaches 30% of the viewport height
       scrub: true, // Scrub the timeline with the scroll
