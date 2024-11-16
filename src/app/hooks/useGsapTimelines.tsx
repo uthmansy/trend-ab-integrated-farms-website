@@ -47,8 +47,8 @@ function useGsapTimelines(): Return {
     //       ? "transform"
     //       : "fixed",
     // });
-    // heroTimeline(scrollRef);
-    // aboutTimelines(scrollRef);
+    heroTimeline(scrollRef);
+    aboutTimelines(scrollRef);
     // Refresh ScrollTrigger and Locomotive Scroll
     // ScrollTrigger.addEventListener("refresh", () => {
     //   loco.current.update();
