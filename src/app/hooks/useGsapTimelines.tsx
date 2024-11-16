@@ -10,7 +10,7 @@ interface Return {
 
 function useGsapTimelines(): Return {
   const scrollRef = useRef(null);
-  const loco = useRef(null);
+  const loco = useRef<any>(null);
 
   useEffect(() => {
     // Initialize Locomotive Scroll
