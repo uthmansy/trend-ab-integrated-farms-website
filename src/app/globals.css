@@ -6,4 +6,9 @@
 body {
   background: var(--background);
   font-family: "helvetical neue", Arial, Helvetica, sans-serif;
+  font-size: calc(13px + 0.2vw);
+}
+
+[data-scroll-container] {
+  min-height: 100vh;
 }
