@@ -1,7 +1,5 @@
 "use client";
 import Header from "@/components/Header";
-import LocomotiveScroll from "locomotive-scroll";
-import { useEffect, useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

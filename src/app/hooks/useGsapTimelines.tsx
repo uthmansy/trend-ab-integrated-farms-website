@@ -23,47 +23,47 @@ function useGsapTimelines(): Return {
       },
     });
 
-    loco.current.on("scroll", ScrollTrigger.update);
+    // loco.current.on("scroll", ScrollTrigger.update);
 
     // Tell ScrollTrigger to use Locomotive Scroll for scroll events
-    ScrollTrigger.scrollerProxy(scrollRef.current, {
-      scrollTop(value) {
-        if (value !== undefined) {
-          loco.current.scrollTo(value, { duration: 0 });
-        } else {
-          //@ts-ignore
-          return loco.current.scroll.instance.scroll.y; // Return current scroll position
-        }
-      },
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        };
-      },
+    // ScrollTrigger.scrollerProxy(scrollRef.current, {
+    //   scrollTop(value) {
+    //     if (value !== undefined) {
+    //       loco.current.scrollTo(value, { duration: 0 });
+    //     } else {
+    //       //@ts-ignore
+    //       return loco.current.scroll.instance.scroll.y; // Return current scroll position
+    //     }
+    //   },
+    //   getBoundingClientRect() {
+    //     return {
+    //       top: 0,
+    //       left: 0,
+    //       width: window.innerWidth,
+    //       height: window.innerHeight,
+    //     };
+    //   },
 
-      pinType:
-        //@ts-ignore
-        scrollRef.current && scrollRef.current.style.transform
-          ? "transform"
-          : "fixed",
-    });
+    //   pinType:
+    //     //@ts-ignore
+    //     scrollRef.current && scrollRef.current.style.transform
+    //       ? "transform"
+    //       : "fixed",
+    // });
 
-    heroTimeline(scrollRef);
-    aboutTimelines(scrollRef);
+    // heroTimeline(scrollRef);
+    // aboutTimelines(scrollRef);
 
     // Refresh ScrollTrigger and Locomotive Scroll
-    ScrollTrigger.addEventListener("refresh", () => {
-      loco.current.update();
-    });
+    // ScrollTrigger.addEventListener("refresh", () => {
+    //   loco.current.update();
+    // });
 
-    ScrollTrigger.refresh();
+    // ScrollTrigger.refresh();
 
     return () => {
       loco.current.destroy();
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      // ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
   return { scrollRef };
