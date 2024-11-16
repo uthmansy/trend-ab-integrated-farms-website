@@ -6,7 +6,7 @@ function Hero() {
     <div
       className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 md:px-8"
       data-scroll
-      data-scroll-speed="3" // Adjusted for content parallax effect
+      data-scroll-speed="0.3" // Adjusted for content parallax effect
     >
       <h1 className="hero-title text-4xl md:text-6xl font-bold mb-4 text-white">
         Welcome to MyWebsite

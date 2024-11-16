@@ -17,13 +17,13 @@ export default function Header() {
       {/* Background Image as an Actual Element */}
       <div
         data-scroll
-        data-scroll-speed="-5" // Adjusted speed for the parallax effect
+        data-scroll-speed="-0.3" // Adjusted speed for the parallax effect
         className="absolute inset-0 bg-cover bg-center z-0"
-        style={{ backgroundImage: `url('${HERO.src}')` }}
+        style={{
+          backgroundImage: `url('${HERO.src}')`,
+          filter: "brightness(30%)",
+        }}
       ></div>
-
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
 
       <TopNav isOpen={isOpen} toggleMenu={toggleMenu} />
       <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
