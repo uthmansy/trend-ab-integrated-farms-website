@@ -8,7 +8,12 @@ export default function Home() {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       //@ts-ignore
-      const locomotiveScroll = new LocomotiveScroll();
+      const locomotiveScroll = new LocomotiveScroll({
+        smooth: true,
+        tablet: {
+          breakpoint: 0,
+        },
+      });
     })();
   }, []);
 
