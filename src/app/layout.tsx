@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sky Thrust Services LTD",
+  title: "Boko Agro Allied Nigeria LTD",
   description: "",
 };
 

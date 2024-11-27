@@ -12,7 +12,14 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#468f9b",
+        dark: "#A2A79E",
         accent: "#666465",
+      },
+      fontFamily: {
+        heading: '"Noto Serif Display", serif',
+      },
+      fontSize: {
+        base: "calc(16px + 0.2vw)", // Custom base font size
       },
     },
   },
