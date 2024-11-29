@@ -29,14 +29,16 @@ function Mission() {
   return (
     <section className="max-w-full overflow-hidden">
       <div className="md:flex">
-        <div className="md:w-1/3">
+        <div className="md:w-1/3 z-0">
           <img
+            data-scroll
+            data-scroll-speed={-0.5}
             src={INTRO_1.src}
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="bg-green-800 md:w-2/3 text-white py-24 md:py-28 px-5 md:pl-0 md:px-10 ">
+        <div className="bg-green-800 md:w-2/3 text-white py-24 md:py-28 px-5 md:pl-0 md:px-10 z-30 relative">
           <div className="max-w-screen-md flex flex-col space-y-14">
             {items.map((item, index) => (
               <div key={index} className="flex items-start space-x-10 md:-ml-7">

@@ -8,6 +8,16 @@ const Header = () => {
 
   const images = [HERO_1.src, HERO_2.src, HERO_3.src];
 
+  const nextSlide = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentImageIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -34,10 +44,20 @@ const Header = () => {
         <div className="bg-black/30 backdrop-blur-md w-full max-w-screen-lg h-full absolute left-0 top-0 bottom-0"></div>
       </div>
       <TopNav />
-      <Hero />
+      <Hero currentImageIndex={currentImageIndex} />
       <div className="absolute bottom-0 right-0 flex">
-        <button className="bg-white text-gray-800  p-3 md:p-5">←</button>
-        <button className="bg-green-800 text-white  p-3 md:p-5">➝</button>
+        <button
+          onClick={prevSlide}
+          className="bg-white text-gray-800  p-3 md:p-5"
+        >
+          ←
+        </button>
+        <button
+          onClick={nextSlide}
+          className="bg-green-800 text-white  p-3 md:p-5"
+        >
+          ➝
+        </button>
       </div>
     </header>
   );

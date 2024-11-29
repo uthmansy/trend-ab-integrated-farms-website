@@ -1,12 +1,16 @@
+import Container from "../Container";
+
 export default function Footer() {
   return (
-    <footer className="bg-green-800 text-white">
-      <div className="container mx-auto px-6 lg:px-16 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-green-800 text-white py-24 md:py28">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-24">
           {/* Logo and About */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-semibold mb-4">Boko Agro Allied</h3>
-            <p className="text-sm leading-relaxed text-gray-300">
+            <h3 className="text-2xl font-semibold mb-8 uppercase tracking-wide">
+              Boko Agro Allied
+            </h3>
+            <p className=" leading-relaxed text-gray-300">
               At Boko Agro Allied, we are committed to revolutionizing
               agriculture through sustainable and innovative farming practices,
               empowering communities, and driving growth in the agro sector.
@@ -15,10 +19,12 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <ul className="text-sm space-y-2">
+            <h4 className="text-lg font-semibold mb-5 uppercase tracking-wide">
+              Contact Us
+            </h4>
+            <ul className=" space-y-8">
               <li>
-                <strong>Email:</strong>{" "}
+                <strong className="uppercase tracking-wider">Email:</strong>{" "}
                 <a
                   href="mailto:info@bokoagroallied.com"
                   className="hover:underline text-gray-300"
@@ -27,12 +33,14 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <strong>Office:</strong> <br />
+                <strong className="uppercase tracking-wider">Office:</strong>{" "}
+                <br />
                 No. 4 Fez Street, Off Kumasi Crescent, <br />
                 Aminu Kano, Wuse 2, Abuja
               </li>
               <li>
-                <strong>Factory:</strong> <br />
+                <strong className="uppercase tracking-wider">Factory:</strong>{" "}
+                <br />
                 No. 61 Ungogo Road, Kano, Kano State
               </li>
             </ul>
@@ -40,8 +48,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="text-sm space-y-2">
+            <h4 className="text-lg font-semibold mb-8 uppercase tracking-wide">
+              Quick Links
+            </h4>
+            <ul className=" space-y-2">
               <li>
                 <a href="/" className="hover:underline text-gray-300">
                   Home
@@ -67,7 +77,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">
+          <p className=" text-gray-400">
             &copy; {new Date().getFullYear()} Boko Agro Allied. All rights
             reserved.
           </p>
@@ -107,7 +117,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

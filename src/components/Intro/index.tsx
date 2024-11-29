@@ -4,9 +4,15 @@ import ButtonLink from "../ButtonLink";
 
 function Intro() {
   return (
-    <section className="flex flex-wrap">
+    <section className="flex flex-wrap overflow-hidden">
       <div className="hidden md:block w-full md:w-1/2 lg:w-1/3">
-        <img src={INTRO_1.src} alt="" className="w-full h-full object-cover" />
+        <img
+          data-scroll
+          data-scroll-speed={-0.5}
+          src={INTRO_1.src}
+          alt=""
+          className="w-full object-cover h-[120%] -mt-56"
+        />
       </div>
       <div className="w-full md:w-1/2 lg:w-2/3 py-24 md:py-40 px-5 md:pl-24 relative">
         <div className="flex flex-col space-y-5 md:space-y-7 max-w-screen-sm">
@@ -25,6 +31,8 @@ function Intro() {
         </div>
         <div className="absolute bottom-0 right-0">
           <img
+            data-scroll
+            data-scroll-speed={-0.2}
             src={LEAF.src}
             alt=""
             className="w-56 md:w-96 max-w-xl opacity-10"

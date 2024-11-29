@@ -36,8 +36,10 @@ const services: Service[] = [
 
 function Services() {
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <img
+        data-scroll
+        data-scroll-speed={-0.2}
         src={SERVICES_BG.src}
         alt=""
         className="absolute w-full h-full top-0 left-0 opacity-30 object-cover"
