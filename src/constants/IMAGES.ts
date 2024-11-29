@@ -17,6 +17,9 @@ import TEAM_3 from "../../public/images/team/nazir.jpg";
 import TEAM_4 from "../../public/images/team/wamball.jpg";
 import TEAM_5 from "../../public/images/team/basshir.jpg";
 import TEAM_6 from "../../public/images/team/dangaza.jpg";
+import PRODUCT_1 from "../../public/images/products/20-10-10.jpg";
+import PRODUCT_2 from "../../public/images/products/20-10-10+S.jpg";
+import PRODUCT_3 from "../../public/images/products/15-15-15.jpg";
 
 export {
   LOGO_MOCKUP,
@@ -38,4 +41,7 @@ export {
   TEAM_4,
   TEAM_5,
   TEAM_6,
+  PRODUCT_1,
+  PRODUCT_2,
+  PRODUCT_3,
 };

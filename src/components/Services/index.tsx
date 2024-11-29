@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useLayoutEffect } from "react";
 import Container from "../Container";
 import {
   SERVICES_BG,
@@ -6,6 +8,8 @@ import {
   SERVICES_ICON_2,
   SERVICES_ICON_3,
 } from "@/constants/IMAGES";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface Service {
   icon: string;
@@ -35,6 +39,26 @@ const services: Service[] = [
 ];
 
 function Services() {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      ".service",
+      { opacity: 0, y: 50 }, // Start with the image completely hidden (width = 0)
+      {
+        opacity: 1,
+        y: 0, // Expand to full width
+        duration: 1.5, // Duration of the animation
+        ease: "power3.out", // Smooth easing effect
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".service",
+          start: "top 70%", // Start animation when image enters viewport
+          toggleActions: "play none none none", // Play animation once
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="relative overflow-hidden">
       <img
@@ -54,7 +78,7 @@ function Services() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="px-14 py-24 flex flex-col items-center space-y-4 bg-white border border-b-8 border-b-green-800 border-opacity-40"
+                className="service px-14 py-24 flex flex-col items-center space-y-4 bg-white border border-b-8 border-b-green-800 border-opacity-40"
               >
                 <div className="h-28 w-28 flex items-center justify-center rounded-full bg-green-200">
                   <img src={service.icon} alt="" className="w-14" />

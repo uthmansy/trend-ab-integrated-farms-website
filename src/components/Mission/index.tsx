@@ -1,6 +1,8 @@
-import React from "react";
-import Container from "../Container";
+"use client";
+import React, { useLayoutEffect } from "react";
 import { INTRO_1 } from "@/constants/IMAGES";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface Item {
   title: string;
@@ -26,6 +28,26 @@ const items: Item[] = [
 ];
 
 function Mission() {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      ".mission",
+      { opacity: 0, x: 50 }, // Start with the image completely hidden (width = 0)
+      {
+        opacity: 1,
+        x: 0, // Expand to full width
+        duration: 1.5, // Duration of the animation
+        ease: "power3.out", // Smooth easing effect
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".mission",
+          start: "top 70%", // Start animation when image enters viewport
+          toggleActions: "play none none none", // Play animation once
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="max-w-full overflow-hidden">
       <div className="md:flex">
@@ -41,7 +63,10 @@ function Mission() {
         <div className="bg-green-800 md:w-2/3 text-white py-24 md:py-28 px-5 md:pl-0 md:px-10 z-30 relative">
           <div className="max-w-screen-md flex flex-col space-y-14">
             {items.map((item, index) => (
-              <div key={index} className="flex items-start space-x-10 md:-ml-7">
+              <div
+                key={index}
+                className="mission flex items-start space-x-10 md:-ml-7"
+              >
                 <span className="flex items-center justify-center border rounded-full h-14 w-14 bg-white text-green-800 ">
                   {index + 1}
                 </span>

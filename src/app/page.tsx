@@ -1,8 +1,10 @@
 "use client";
+import CarouselTest from "@/components/CarouselTest";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Intro from "@/components/Intro";
 import Mission from "@/components/Mission";
+import Products from "@/components/Products";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
 import { useEffect } from "react";
@@ -27,8 +29,10 @@ export default function Home() {
       <Intro />
       <Services />
       <Mission />
+      <Products />
       <Team />
       <Footer />
+      {/* <CarouselTest /> */}
     </div>
   );
 }
