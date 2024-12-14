@@ -1,13 +1,12 @@
 "use client";
-import CarouselTest from "@/components/CarouselTest";
+import AboutUs from "@/components/AboutUs";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Intro from "@/components/Intro";
-import Mission from "@/components/Mission";
-import Products from "@/components/Products";
+import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Team from "@/components/Team";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -24,15 +23,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <Header />
-      <Intro />
+      <Hero />
+      <AboutUs />
       <Services />
-      <Mission />
-      <Products />
-      <Team />
+      {/* <Team /> */}
+      <Contact />
       <Footer />
-      {/* <CarouselTest /> */}
     </div>
   );
 }

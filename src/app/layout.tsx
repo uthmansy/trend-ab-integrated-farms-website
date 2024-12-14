@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Boko Agro Allied Nigeria LTD",
+  title: "Trend AB Integrated Farms Nigeria LTD",
   description: "",
 };
 

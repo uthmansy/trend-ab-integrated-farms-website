@@ -11,15 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#468f9b",
-        dark: "#A2A79E",
-        accent: "#666465",
+        primary: "#868237",
+        secondary: "#363C86",
+        accent: "#BCC032",
       },
       fontFamily: {
         heading: '"Noto Serif Display", serif',
       },
       fontSize: {
-        base: "calc(16px + 0.2vw)", // Custom base font size
+        base: "calc(14px + 0.2vw)", // Custom base font size
       },
     },
   },
