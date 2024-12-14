@@ -184,8 +184,8 @@ function Hero() {
                     {title}
                   </h2>
                   <p className="text-opacity-90 md:hidden">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quasi recusandae ipsum eaque nulla, ut quam rem.
+                    Innovative solutions for wheat, grains, and profitable
+                    farming ventures.
                   </p>
                 </div>
               </div>
@@ -193,8 +193,8 @@ function Hero() {
 
             <div className="bg-primary w-full max-w-screen-md bg-opacity-85 absolute hidden md:block left-[100%] top-[100%] p-10">
               <p className="opacity-80">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-                recusandae ipsum eaque nulla, ut quam rem.
+                Innovative solutions for wheat, grains, and profitable farming
+                ventures.
               </p>
             </div>
           </div>

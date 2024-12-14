@@ -12,18 +12,15 @@ function AboutUs() {
   const testimonials = [
     {
       customer: "John Doe",
-      text: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-                  rem, nostrum repudiandae doloribus reiciendis.`,
+      text: `The fertilizers from Trend AB Integrated Farms have transformed our yields. The team is knowledgeable, supportive, and always delivers on time. Highly recommend them to any farmer looking for reliable solutions!`,
     },
     {
       customer: "Usman Doe",
-      text: `rem accusamus autem ea
-              aspernatur deleniti iste assumenda?`,
+      text: `Working with Trend AB Integrated Farms has been a game-changer for our business. Their wheat and grains are consistently top-quality, and their commitment to sustainability aligns perfectly with our values.`,
     },
     {
       customer: "Shuaibu Doe",
-      text: `dolor sit amet consectetur adipisicing elit. Ut rem,
-              nostrum repudiandae doloribus reiciendis, hic.`,
+      text: `Their agricultural consultancy has helped us implement modern techniques, improving efficiency and profitability. Trend AB truly understands the challenges farmers face and provides practical, effective solutions.`,
     },
   ];
 
@@ -125,10 +122,10 @@ function AboutUs() {
           </div>
           <div>
             <p ref={firstContentRef}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut rem,
-              nostrum repudiandae doloribus reiciendis, hic, labore laudantium
-              eum voluptate porro quam. Explicabo rem accusamus autem ea
-              aspernatur deleniti iste assumenda?
+              At Trend AB Integrated Farms, we are dedicated to revolutionizing
+              agriculture with innovative solutions. Specializing in fertilizer
+              production, grain cultivation, and sustainable farming, we empower
+              farmers to achieve abundant harvests.
             </p>
           </div>
         </div>
@@ -143,7 +140,7 @@ function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-40 lg:gap-72 mb-24 md:mb-28 relative text-center md:text-left">
             <div>
               <p className="about-comp-2 text-2xl md:text-4xl text-accent mb-10 md:mb-20">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut rem
+                Our expertise and dedication help farmers maximize productivity
               </p>
               <Link
                 href={"/about"}
@@ -157,10 +154,10 @@ function AboutUs() {
                 We Give Back
               </h3>
               <p className="about-comp-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-                rem, nostrum repudiandae doloribus reiciendis, hic, labore
-                laudantium eum voluptate porro quam. Explicabo rem accusamus
-                autem ea aspernatur deleniti iste assumenda?
+                Our commitment to quality and excellence ensures we deliver
+                value from farm to market. With a focus on wheat, grains, and
+                modern agricultural practices, we are proud to be a trusted
+                partner for growth and prosperity.
               </p>
             </div>
           </div>
@@ -176,7 +173,7 @@ function AboutUs() {
                 className="w-full h-full object-cover mix-blend-multiply absolute top-0 left-0 bottom-0 right-0 "
               />
               <h2 className="text-white text-4xl md:text-7xl text-center opacity-80 italic">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                Cultivating Prosperity, Harvesting Tomorrow.
               </h2>
             </div>
           </div>
@@ -188,16 +185,21 @@ function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-28 md:gap-40 lg:gap-72 py-24 md:py-40 relative">
             <div className="flex flex-col space-y-8">
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-                rem, nostrum repudiandae doloribus reiciendis, hic, labore
-                laudantium eum voluptate porro quam. Explicabo rem accusamus
-                autem ea aspernatur deleniti iste assumenda?
+                At Trend AB Integrated Farms, we offer a comprehensive range of
+                agricultural services designed to meet the diverse needs of
+                farmers and agribusinesses. Our fertilizer production division
+                provides high-quality, nutrient-rich products tailored to
+                enhance soil health and boost crop yields. We specialize in the
+                cultivation and distribution of premium wheat and grains,
+                ensuring a steady supply of high-grade produce for local and
+                international markets.
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-                rem, nostrum repudiandae doloribus reiciendis, hic, labore
-                laudantium eum voluptate porro quam. Explicabo rem accusamus
-                autem ea aspernatur deleniti iste assumenda?
+                In addition, we offer expert agricultural consultancy, sharing
+                innovative solutions and sustainable farming practices to help
+                farmers optimize their operations. From soil preparation to
+                harvest, our services are crafted to empower the agricultural
+                community and drive food security.
               </p>
               <Link
                 href={"/about"}

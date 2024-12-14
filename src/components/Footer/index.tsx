@@ -24,9 +24,10 @@ function Footer() {
               </div>
             </Link>
             <p className="max-w-md">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
-              eligendi veritatis error accusamus qui iure, mollitia soluta
-              reprehenderit molestiae voluptates esse cumque.
+              Thank you for visiting Trend AB Integrated Farms. We are committed
+              to providing high-quality agricultural solutions, fostering
+              sustainable growth, and supporting the success of farmers
+              everywhere. Reach out to us for all your farming needs.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-32 lg:gap-40">
@@ -36,8 +37,11 @@ function Footer() {
               </h4>
               <ul className="flex flex-col space-y-3">
                 <li>info@trendabintegratedfarms.com</li>
-                <li>Head Office: NO 2007, Bachirawa, Kano.</li>
-                <li>+234 000 000 0000</li>
+                <li>
+                  Head Office: No. 4 Fez Street, Off Kumasi Crescent, Aminu
+                  Kano, Wuse 2, Abuja.
+                </li>
+                {/* <li>+234 000 000 0000</li> */}
               </ul>
             </div>
             <div>

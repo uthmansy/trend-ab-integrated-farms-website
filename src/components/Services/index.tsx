@@ -20,27 +20,26 @@ interface Service {
 function Services() {
   const services: Service[] = [
     {
-      title: "Service One",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae tempore amet rerum at.`,
+      title: "Fertilizer Production and Sales",
+      description: `High-quality fertilizers designed to enhance soil health and crop yields.`,
       icon: SERVICES_ICON_1.src,
     },
     {
-      title: "Service Two",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae tempore amet rerum at.`,
+      title: "Grain Cultivation and Distribution",
+      description: `
+Premium wheat and grains grown and delivered with exceptional quality standards.`,
       icon: SERVICES_ICON_2.src,
     },
     {
-      title: "Service Three",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae tempore amet rerum at.`,
+      title: "Agricultural Consultancy",
+      description: `
+Expert advice to optimize farming operations and improve agricultural efficiency.`,
       icon: SERVICES_ICON_3.src,
     },
     {
-      title: "Service Four",
-      description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae tempore amet rerum at.`,
+      title: "Supply Chain Solutions",
+      description: `
+Seamless logistics ensuring timely delivery of agricultural products and materials.`,
       icon: SERVICES_ICON_4.src,
     },
   ];
@@ -86,10 +85,13 @@ function Services() {
               Our services
             </h2>
             <p className="opacity-70">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              asperiores maxime nemo cupiditate quis atque. Natus, in. Facilis
-              ipsa molestiae eius esse porro debitis quos, qui, omnis est
-              repudiandae dolore.
+              At Trend AB Integrated Farms, we offer a range of services to
+              support sustainable agriculture and maximize productivity. From
+              producing high-quality fertilizers to cultivating premium grains
+              and providing expert consultancy, our solutions are tailored to
+              meet the diverse needs of farmers and agribusinesses. We are
+              committed to delivering excellence at every stage, empowering
+              growth and prosperity in agriculture.
             </p>
           </div>
           <div
